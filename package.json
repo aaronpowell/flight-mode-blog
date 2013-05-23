@@ -1,0 +1,12 @@
+{
+  "name": "tests",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.2.2"
+  },
+  "devDependencies": {},
+  "repository": "",
+  "author": "Aaron Powell <me@aaron-powell.com>",
+  "license": "MIT"
+}

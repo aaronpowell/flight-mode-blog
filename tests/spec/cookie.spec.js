@@ -1,0 +1,1 @@
+syncTestRunner('CookieAdapter', 'cookie');
