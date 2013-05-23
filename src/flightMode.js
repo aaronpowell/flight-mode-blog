@@ -1,7 +1,7 @@
 (function (global) {
     'use strict';
 
-    var FlightMode = function (storeName, adapterName) {
+    var FlightMode = function (storeName, adapterName, complete, migrate) {
         if (!(this instanceof FlightMode)) {
             return new FlightMode(storeName);
         }
@@ -10,7 +10,7 @@
 
         var adapter = FlightMode.adapters[adapterName] || FlightMode.defaultAdapter;
 
-        this.adapter = adapter.init(storeName);
+        this.adapter = adapter.init(storeName, complete, migrate);
     };
 
     FlightMode.prototype.add = function(obj) {
